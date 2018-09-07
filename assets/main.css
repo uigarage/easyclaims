@@ -1,27 +1,40 @@
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
 .outer {
     display: table;
     position: absolute;
     height: 100%;
     width: 100%;
-  }
-  
-  .middle {
+}
+
+.middle {
     display: table-cell;
     vertical-align: middle;
-  }
-  
-  .inner {
+}
+
+.inner {
     margin-left: auto;
     margin-right: auto;
     width: 400px;
     /*whatever width you want*/
-  }
-  
+}
+
+/* Sidebar sticky  */
+.sidebar-sticky ul li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
 /*  Buttons and Icons   */
-
 .check-mark {
     color: #9c88ff;
+    margin-right: -12px;
 }
 
 .btn-main {
@@ -33,6 +46,17 @@
 .btn-main:hover {
     color: #fff;
     background: #8c7ae6;
+}
+
+.select-box {
+    border: 1px solid #eee;
+    padding: 10px 20px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.select-box.active {
+    border: 1px solid #9c88ff;
 }
 
 .select-box p {
@@ -48,12 +72,7 @@
 .select-box i.check-mark {
     color: #9c88ff;
 }
+
 .select-box span {
     font-size: 0.8rem;
-}
-
-.select-box {
-    border: 1px solid #eee;
-    padding: 10px 20px;
-    border-radius: 8px;
 }

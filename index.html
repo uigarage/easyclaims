@@ -1,30 +1,33 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="assets/main.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/main.css" />
 
     <title>EasyClaims - Claiming process made easy!</title>
 
-  </head>
-  <body>
-      <div id="intro">
+</head>
+
+<body>
+    <div id="intro" class="page active">
         <section class="container-fluid" style="height: 400px; background: #8c7ae6">
             <div class="container text-center" style="padding-top: 150px">
                 <h2 style="color: #fff;">Welcome to the EasyClaims Center</h2>
             </div>
-            
+
             <div class="container text-center" style="margin-top: 50px;">
-                <button type="button" class="btn btn-light" id="btnStart">Start My Claiming Process</button>
+                <button type="button" class="btn btn-light btn-wizard" id="btnStart">Start My Claiming Process</button>
             </div>
         </section>
-    
+
         <!-- background: #ecf0f1" -->
         <section class="container-fluid" style="padding-top: 120px;">
             <div style="">
@@ -32,41 +35,36 @@
                 <div class="container text-center" style="margin-top: 20px;">
                     <button type="button" class="btn btn-success">Check My Status</button>
                 </div>
-            </div>        
+            </div>
         </section>
-      </div> <!-- // #intro -->
+    </div> <!-- // #intro -->
 
-      <div id="loginPage" style="display: none;">
+    <div id="loginPage" class="page">
         <nav class="navbar navbar-light fixed-top bg-light flex-md-nowrap p-0 shadow">
             <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">EasyClaim</a>
         </nav>
 
-        
+
         <div class="outer">
             <div class="middle">
-            <div class="inner">
-                <form >
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                    </div>
-                    <div class="form-group form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                    </div>
-                    <button type="button" id="btnLogin" class="btn btn-primary">Login</button>
-                </form>
-            </div>
+                <div class="inner">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email / Username">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                        <button type="button" id="btnLogin" class="btn btn-primary btn-wizard">Login</button>
+                    </form>
+                </div>
             </div>
         </div>
-      </div> <!-- // #loginPage -->
+    </div> <!-- // #loginPage -->
 
-      <div id="policyInformation" style="display:none;">
+    <div id="policyInformation" class="page">
         <nav class="navbar navbar-light fixed-top bg-light flex-md-nowrap p-0 shadow">
             <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">EasyClaim</a>
 
@@ -77,104 +75,378 @@
             </ul>
         </nav>
 
-
         <div class="container-fluid" style="margin-top: 60px;">
             <div class="row">
                 <nav class="col-md-2 d-none d-md-block bg-light sidebar">
-                    <div class="sidebar-sticky">          
+                    <div class="sidebar-sticky">
                         <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-                        <span>Process Activity</span>
-                        <a class="d-flex align-items-center text-muted active" href="">
-                            <span data-feather="plus-circle"></span>
-                        </a>
+                            <span>Process Activity</span>
+                            <a class="d-flex align-items-center text-muted active" href="">
+                                <span data-feather="plus-circle"></span>
+                            </a>
                         </h6>
                         <ul class="nav flex-column mb-2">
-                        <li class="nav-item">
-                            <a class="btn btn-main nav-link " href="">
-                            <span data-feather="file-text"></span>
-                            Policy Information
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                            <span data-feather="file-text"></span>
-                            Claims Information
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                            <span data-feather="file-text"></span>
-                            User Profile
-                            </a>
-                        </li>                       
+                            <li class="nav-item">
+                                <button id="btnSideBarPolicy" class="btn btn-main">
+                                    Policy Information
+                                </button>
+                            </li>
+                            <li class="nav-item">
+                                <button id="btnSideBarClaims" class="btn btn-light">
+                                    Claims Information
+                                </button>
+                        
+                            </li>
+                            <li class="nav-item">
+                                <button id="btnSideBarPersonal" class="btn btn-light">
+                                    Personal Information
+                                </button>
+                            </li>
                         </ul>
                     </div>
                 </nav>
-          
-                <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
-                    <div class="row" style="margin-top: 80px;">
-                        <div class="col-sm">
-                            
-                            <label class="btn select-box active">
-                                <div>
-                                    <i class="check-mark fa fa-check-square float-right" aria-hidden="true"></i>    
-                                </div>    
-                                <i class="fa fa-user-circle fa-3x main-icon"></i> 
-                                <p>Personal Cover</p>
-                                <span>#PC10000001</span>
 
-                            </label>
-                        </div>
-                        <div class="col-sm">
-                            <label class="btn select-box">
-                                    
-                                <i class="fa fa-car fa-3x main-icon"></i> 
+                <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+                    <div class="page active" id="policyWizard">
+                        <div class="row" style="margin-top: 80px;">
+                            <div class="col-sm">
+                                <label class="btn select-box">
+                                    <div>
+                                        &nbsp;
+                                        <i class="d-lg-none check-mark fa fa-check-square float-right" aria-hidden="true"></i>
+                                    </div>
+                                    <i class="fa fa-user-circle fa-3x main-icon"></i>
+                                    <p>Personal Cover</p>
+                                    <span>#PC10000001</span>
+                                    <input type="checkbox" value="PC10000001" class="d-lg-none " />
+                                </label>
+                            </div>
+                            <div class="col-sm">
+                                <label class="btn select-box">
+                                    <div>
+                                        &nbsp;
+                                        <i class="d-lg-none check-mark fa fa-check-square float-right" aria-hidden="true"></i>
+                                    </div>
+                                    <i class="fa fa-car fa-3x main-icon"></i>
                                     <p>Vechicle Cover</p>
                                     <span>#VC10000001</span>
+                                    <input type="checkbox" value="VC10000001" class="d-lg-none" />
                                 </label>
-                        </div>
-                        <div class="col-sm">
-                            <label class="btn select-box">
-                                    <i class="fa fa-paper-plane fa-3x main-icon"></i> 
-                                    <p>Travel Cover</p>
-                                    <span>#TC10000001</span>
+                            </div>
+                            <div class="col-sm">
+                                <label class="btn select-box">
+                                    <div>
+                                        &nbsp;
+                                        <i class="d-lg-none check-mark fa fa-check-square float-right" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div>
+                                        <i class="fa fa-paper-plane fa-3x main-icon"></i>
+                                        <p>Travel Cover</p>
+                                        <span>#TC10000001</span>
+                                    </div>
+                                    <input type="checkbox" value="TC10000001" class="d-lg-none" />
                                 </label>
-                        </div>
-                        <div class="col-sm">
-                            <label class="btn select-box">
-                                    <i class="fa fa-key fa-3x main-icon"></i> 
+                            </div>
+                            <div class="col-sm">
+                                <label class="btn select-box">
+                                    <div>
+                                        &nbsp;
+                                        <i class="d-lg-none check-mark fa fa-check-square float-right" aria-hidden="true"></i>
+                                    </div>
+                                    <i class="fa fa-key fa-3x main-icon"></i>
                                     <p>Home Protect</p>
                                     <span>#HP10000001</span>
+                                    <input type="checkbox" value="HP10000001" class="d-lg-none" />
                                 </label>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="row" style="margin-top: 80px;">
-                        <div class="col-sm"></div>
-                        <div class="col-sm">
-                            <h4 class="text-center">Would you like to?</h4>
-                            <select class="form-control">
-                                <option>File a claim?</option>
-                                <option>View all claims?</option>
-                                <option>Get policy details?</option>
-                                <option>Know more about claims?</option>
-                            </select>
+                        <div class="row" style="margin-top: 80px;">
+                            <div class="col-sm"></div>
+                            <div class="col-sm">
+                                <h4 class="text-center">Would you like to?</h4>
+                                <select id="selClaimProcess" class="form-control">
+                                    <option value="">Please Select...</option>
+                                    <option value="1">File a claim?</option>
+                                    <option value="2">View all claims?</option>
+                                    <option value="3">Get policy details?</option>
+                                    <option value="4">Know more about claims?</option>
+                                </select>
+                            </div>
+                            <div class="col-sm"></div>
                         </div>
-                        <div class="col-sm"></div>
-                    </div>
+
+                    </div> <!-- Policy Wizard-->
+
+
+                    <div class="page" id="claimDeclaration">
+                        <h3>Declaration</h3>
+                    
+                        <p>&nbsp;</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at suscipit ipsum. Vivamus mollis felis nibh. Donec
+                            et eleifend orci. Vivamus eu erat turpis. Suspendisse aliquet lobortis sem, in gravida nulla. In hac habitasse platea
+                            dictumst. Integer in pretium nunc. Pellentesque eleifend, libero at pulvinar finibus, justo sapien auctor lorem,
+                            ac commodo neque lorem et sapien. Cras elementum urna nisl, in fermentum est facilisis sodales. Suspendisse pulvinar
+                            dignissim porttitor. Phasellus porta molestie sapien, eu aliquet eros suscipit sed. Integer mauris elit, scelerisque
+                            ut finibus sed, consectetur non augue. Nam sollicitudin diam quis felis bibendum aliquet. Vestibulum blandit tellus
+                            vel tellus porttitor, a pharetra massa consectetur. Etiam et justo iaculis, cursus mi et, iaculis metus. Nunc varius
+                            luctus ipsum nec ultricies.</p>
+                        <p>Nulla lobortis rhoncus metus, a egestas lectus pellentesque nec. Proin vel suscipit arcu, vel hendrerit ipsum. Suspendisse
+                            quis libero odio. Vivamus tincidunt urna consectetur rhoncus luctus. Ut eleifend nunc at lectus malesuada, sit amet
+                            scelerisque dolor dapibus. Nam tristique porttitor tristique. Nam id pulvinar mi. Aenean fermentum leo risus, eget
+                            ultrices quam malesuada quis. Aliquam eleifend nulla nec efficitur egestas.</p>
+                    
+                        <p>Vivamus rutrum laoreet orci sed porttitor. Morbi semper eros nec massa viverra iaculis. Nulla convallis odio quam.
+                            Sed varius lectus vel turpis condimentum, quis cursus leo mattis. Nam sed condimentum massa. Curabitur sagittis tellus
+                            tortor, quis fringilla massa tristique vel. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                            inceptos himenaeos. Sed volutpat auctor eleifend. Nullam vel eros sed arcu laoreet egestas ut a nisl.</p>
+                        </p>
+                    
+                        <div class="float-right">
+                            <button id="btnAgree" class="btn btn-main btn-wizard">I Agree</button>
+                            <button id="btnClaimCancel" class="btn btn-light btn-wizard">Cancel</button>
+                        </div>
+                    </div> <!-- claimDeclaration -->
+
+                    <div class="page" id="claimsSelection">
+                        <h3>Let us know more about your claim(s) in relation to below?</h3>
+                    
+                        <div class="row" style="margin-top: 80px;">
+                            <div class="col-sm">
+                                <label class="btn select-box">
+                                    <div>
+                                        &nbsp;
+                                        <i class="d-lg-none check-mark fa fa-check-square float-right" aria-hidden="true"></i>
+                                    </div>
+                                    <i class="fa fa-heartbeat fa-3x main-icon"></i>
+                                    <p>Personal Property</p>
+                                    <span>Damage / loss / theft</span>
+                                    <input type="checkbox" value="Personal Property damage / loss / theft" class="d-lg-none " />
+                                </label>
+                            </div>
+                            <div class="col-sm">
+                                <label class="btn select-box">
+                                    <div>
+                                        &nbsp;
+                                        <i class="d-lg-none check-mark fa fa-check-square float-right" aria-hidden="true"></i>
+                                    </div>
+                                    <i class="fa fa-truck fa-3x main-icon"></i>
+                                    <p>Vehicle Rental</p>
+                                    <span>Benefits / theft / damage / liablity</span>
+                                    <input type="checkbox" value="Vehicle Rental Benefits / theft / damage / liablity" class="d-lg-none" />
+                                </label>
+                            </div>
+                            <div class="col-sm">
+                                <label class="btn select-box">
+                                    <div>
+                                        &nbsp;
+                                        <i class="d-lg-none check-mark fa fa-check-square float-right" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div>
+                                        <i class="fa fa-gavel fa-3x main-icon"></i>
+                                        <p>Legal Assistance</p>
+                                        <span>Compensation / Settlement</span>
+                                    </div>
+                                    <input type="checkbox" value="Legal Assistance Compensation / Settlement" class="d-lg-none" />
+                                </label>
+                            </div>
+                            <div class="col-sm">
+                                <label class="btn select-box">
+                                    <div>
+                                        &nbsp;
+                                        <i class="d-lg-none check-mark fa fa-check-square float-right" aria-hidden="true"></i>
+                                    </div>
+                                    <i class="fa fa-key fa-3x main-icon"></i>
+                                    <p>General</p>
+                                    <span>General</span>
+                                    <input type="checkbox" value="General" class="d-lg-none" />
+                                </label>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-sm">
+                                <label class="btn select-box">
+                                    <div>
+                                        &nbsp;
+                                        <i class="d-lg-none check-mark fa fa-check-square float-right" aria-hidden="true"></i>
+                                    </div>
+                                    <i class="fa fa-university fa-3x main-icon"></i>
+                                    <p>Lorem ipsum dolor</p>
+                                    <span>Lorem ipsum dolor</span>
+                                    <input type="checkbox" value="Lorem ipsum dolor" class="d-lg-none " />
+                                </label>
+                            </div>
+                            <div class="col-sm">
+                                <label class="btn select-box">
+                                    <div>
+                                        &nbsp;
+                                        <i class="d-lg-none check-mark fa fa-check-square float-right" aria-hidden="true"></i>
+                                    </div>
+                                    <i class="fa fa-handshake-o fa-3x main-icon"></i>
+                                    <p>Donec eu lobortis elit</p>
+                                    <span>Donec eu lobortis elit</span>
+                                    <input type="checkbox" value="Donec eu lobortis elit" class="d-lg-none" />
+                                </label>
+                            </div>
+                            <div class="col-sm">
+                                <label class="btn select-box">
+                                    <div>
+                                        &nbsp;
+                                        <i class="d-lg-none check-mark fa fa-check-square float-right" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div>
+                                        <i class="fa fa-industry fa-3x main-icon"></i>
+                                        <p>Aenean efficitur sit</p>
+                                        <span>Aenean efficitur sit</span>
+                                    </div>
+                                    <input type="checkbox" value="Aenean efficitur sit" class="d-lg-none" />
+                                </label>
+                            </div>
+                            <div class="col-sm"></div>
+                        </div>
+
+                        <div class="float-right">
+                            <button id="btnPrevClaimType" class="btn btn-main btn-wizard"><i class="fa fa-angle-double-left"></i> Prev</button>
+                            <button id="btnNextClaimType" class="btn btn-main btn-wizard">Next <i class="fa fa-angle-double-right"></i></button>
+                        </div>
+                    </div> <!-- claimDeclaration -->
+
+                    <div class="page" id="personalInformation">
+                        <div class="row">
+                            <div class="col"></div>
+                            <div class="col-8">
+                                <h3>Your Personal Information</h3>
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <th>First Name</th>
+                                            <td>John</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Last Name</th>
+                                            <td>Doe</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Home Address</th>
+                                            <td>
+                                                <p>123 Main Street, <br/>
+                                                    AnyTown US 12345-9998
+                                        
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>Policy Cover Type</th>
+                                            <td id="txtPolicyCover">
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <th>Claims Selected</th>
+                                            <td id="txtClaimsSelected">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                                <th></th>
+                                                <td>
+                                                    <button id="btnComplete" class="btn btn-main btn-wizard">Complete the Process</button>
+                                                </td>
+                                            </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col"></div>
+                        </div>
+                    </div> <!-- Personal Information -->
                 </main>
-            </div>
+            </div> 
+
+            
         </div>
     </div> <!-- // #policyInformation -->
-    
 
 
+    <div id="policySelectionErrorModal" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Policy Selection Error</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Please select the type of policy you need to proceed with claims process. </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-main" data-dismiss="modal">Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="claimSelectionErrorModal" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Claim Selection Error</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Please select atleast one relation type to proceed to next screen. </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-main" data-dismiss="modal">Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="completionSuccessModal" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Claim Process Completed</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h4>Your claims succesfully processed.</h4>
+                    <p>
+                        <strong>What is the next step?</strong>
+                    </p>
+                    <p>
+                        <ul>
+                            <li>You will receive claim details by post</li>
+                            <li>Your claim amount will be transferred to your bank account in 4 to 5 business days</li>
+                            <li>For further queries, please call our customer care at 1-800-900099888</li>
+                        </ul>
+                        
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-main" data-dismiss="modal">Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
-  </body>
+</body>
+
 </html>
